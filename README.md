@@ -5,7 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Useful Links
 
 [Reactive Forms Introduction (Video)](https://www.youtube.com/watch?v=JeeUY6WaXiA)
+
 [Introduction to Angular Forms (Article)](https://blog.angular-university.io/introduction-to-angular-2-forms-template-driven-vs-model-driven/)
+
 [Angular Forms Official Docs](https://angular.io/guide/forms-overview)
 
 ## Development server
