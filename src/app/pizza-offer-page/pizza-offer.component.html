@@ -1,0 +1,27 @@
+<div class="container content">
+  <div class="row">
+    <div class="col">
+      <div hidden="true" class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <div class="row">
+        <div class="col-md">
+          <app-selected-pizza-viewer [pizzas]="pizzas" (newPizza)="newPizzaAdded"></app-selected-pizza-viewer>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          <app-customer-details></app-customer-details>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <app-pizza-list></app-pizza-list>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<form (submit)="addPizza(pizzasEl.value);">
+  <div class="pizza-selector">
+    <div class="row" *ngIf="error">
+      <div class="col-md">
+        <div hidden="true" class="alert alert-danger" role="alert">
+          {{error}}
+        </div>
+      </div>
+    </div>
+    <div class="row pizza-selector-sizes">
+      <div class="col-md">
+        <div class="form-group">
+          <label for="pizza-selector">Выбери пиццу:</label>
+          <select class="form-control" id="pizza-selector" #pizzasEl>
+            <option *ngFor="let pizza of pizzas" [id]="pizza.id">{{pizza.name}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row pizza-selector-toppings">
+      <div class="col-md">
+        <h5>Топпинги</h5>
+        <div class="toppings-selector">
+          <div class="form-check topping-item" *ngFor="let topping of toppings">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" [checked]="topping.added">
+              {{topping.name}}
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row add-pizza">
+      <div class="col-md">
+        <input type="submit" class="btn btn-primary" value="Добавить">
+      </div>
+    </div>
+  </div>
+</form>
